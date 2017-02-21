@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>starfleet.space</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery.js"></script>
+  <script src="typed.js"></script>
+<script>
+  $(function(){
+      $(".element").typed({
+        strings: ["captain-kirk", "christine", "final-frontier", "jake", "tailor-garak", "james", "cmdr-spock", "julian", "kira-nerys", "leonard", "damnitjim", "nyota", "to-boldly-go", "elim"],
+        typeSpeed: 80,
+        // backspacing speed
+        backSpeed: 60,
+        // loop
+        loop: true,
+        // false = infinite
+        loopCount: false,
+      });
+  });
+</script>
+<style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="element"></div>
+  <div class="email">
+   @starfleet.space
+   </div>
+</div>
+
+<span id="typed" style="white-space:pre"></span>
+
+	
+</body>
+</html>
